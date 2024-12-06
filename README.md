@@ -1,19 +1,15 @@
-# HyperFlow
-HyperFlow is my solo project to create an imperative language that was originally designed to manage files and directories, but has now evolved to manage processes. It is a shell-based imperative language, which I call 'Prompt Language.
+# HyperFlow - Documentation
+Overview
 
-# The HyperFlow structure is designed to be both easy to read and simple to write.
-It operates as follows:
+HyperFlow is a flexible and powerful scripting language designed for automating tasks, managing files, and interacting with the system environment. It uses a declarative syntax that is easy to read and write. This documentation provides an overview of its syntax and usage, including how to create, manipulate, and manage directories and files using HyperFlow commands.
 
-# <action-call> <function> <parameters>;
+Syntax
+The basic syntax of HyperFlow follows the structure of:
+_<action> <function> <parameters>;_
 
-Where the action-call serves as a library to invoke the associated functions, and the parameters define the specific details for those functions.
+Where:
 
-mng: Action-call for management operations.
-cxt: Action-call for context-related operations.
-sis: Action-call for system processes.
+- Action refers to the type of operation (e.g., mng for management, cxt for context).
+- Function defines the specific task to perform (e.g., .cr for creating directories).
+- Parameters are the arguments passed to the function (e.g., dir, nm).
 
-Functions are invoked via the . (dot) operator.
-
-Example:
-mng .cr folder: "c:\workspace", nm: "NEW FOLDER", upper: first;
-EXIT: "New Folder"
